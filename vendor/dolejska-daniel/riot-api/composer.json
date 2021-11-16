@@ -1,0 +1,22 @@
+{
+	"name": "dolejska-daniel/riot-api",
+	"type": "library",
+	"description": "RiotAPI PHP Wrapper Metapackage",
+	"keywords": ["riot", "league of legends", "data dragon", "api", "wrapper", "php7", "php8", "metapackage"],
+	"homepage": "https://github.com/dolejska-daniel/riot-api",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Daniel Dolejška",
+			"email": "dolejskad@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"dolejska-daniel/riot-api-league": "^1",
+		"dolejska-daniel/riot-api-datadragon": "^1"
+	},
+	"require-dev": {},
+	"autoload": {},
+	"minimum-stability": "stable"
+}

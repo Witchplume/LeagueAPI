@@ -1,0 +1,14 @@
+.idea/
+
+# Composer files
+vendor/
+composer.phar
+composer.lock
+
+# Testing data
+tests/Coverage/
+tests/LeagueAPI/Definition/cache-fcp/
+
+# Cache
+src/LeagueAPI/cache/
+src/DataDragonAPI/cache/

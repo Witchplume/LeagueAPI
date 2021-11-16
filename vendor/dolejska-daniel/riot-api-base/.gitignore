@@ -1,0 +1,11 @@
+.idea/
+
+# Composer files
+vendor/
+composer.phar
+composer.lock
+
+# Cache
+src/Base/cache/
+build
+.phpunit.result.cache

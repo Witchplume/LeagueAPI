@@ -1,0 +1,35 @@
+{
+	"name": "dolejska-daniel/riot-api-base",
+	"type": "library",
+	"description": "Generic base for simple Riot API PHP wrapper implementation.",
+	"keywords": ["riot", "api", "wrapper", "base", "php7"],
+	"homepage": "https://github.com/dolejska-daniel/riot-api-base",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Daniel Dolejška",
+			"email": "dolejskad@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"scripts": {
+		"test": "vendor/bin/phpunit -v --bootstrap phpunit.php --configuration phpunit.xml --coverage-text --coverage-html build/coverage"
+	},
+	"require": {
+		"guzzlehttp/guzzle": "^7|^6",
+		"symfony/cache": "^5",
+		"psr/cache": "^1",
+		"php": ">=7.3",
+		"ext-json": "*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9"
+	},
+	"autoload": {
+		"psr-4": {
+			"RiotAPI\\Base\\": "src/Base",
+			"RiotAPI\\Tests\\": "src/Tests"
+		}
+	},
+	"minimum-stability": "stable"
+}

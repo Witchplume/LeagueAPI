@@ -1,0 +1,32 @@
+{
+	"name": "dolejska-daniel/riot-api-league",
+	"type": "library",
+	"description": "Riot League of Legends API wrapper for PHP7",
+	"keywords": ["riot", "league of legends", "api", "wrapper", "php7"],
+	"homepage": "https://github.com/dolejska-daniel/riot-api-league",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Daniel Dolejška",
+			"email": "dolejskad@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"scripts": {
+		"test": "vendor/bin/phpunit -v --bootstrap phpunit.php --configuration phpunit.xml --coverage-text --coverage-html build/coverage"
+	},
+	"require": {
+		"dolejska-daniel/riot-api-base": "^1",
+		"php": ">=7.3",
+		"ext-json": "*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9"
+	},
+	"autoload": {
+		"psr-4": {
+			"RiotAPI\\LeagueAPI\\": "src/LeagueAPI"
+		}
+	},
+	"minimum-stability": "stable"
+}
