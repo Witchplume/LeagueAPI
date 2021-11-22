@@ -25,7 +25,7 @@ body {
 	color:	white;
 }
 .button {
-	background: #2d3436;
+	background: #b2bec3;
 	float: right;
 	width: 40px;
 	height: 40px;
@@ -36,5 +36,7 @@ body {
 	border: none;
 }
 .button:hover {
-	background-color: #636e72;
+	transition-duration: 250ms;
+	transition-property: background-color;
+	background-color: #dfe6e9;
 }

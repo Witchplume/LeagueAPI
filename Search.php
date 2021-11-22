@@ -11,7 +11,9 @@
 				<form action="Test.php" method="get">
 					<input class="search-field" type="text" name="search" placeholder="Summoner name">
 					<div class="button">
-						<input class="button" type="submit" value="">	
+						<button class="button" type="submit" value="">
+							<img class="button" src="button2.png">
+						</button>	
 					</div>
 				</form>
 			</div>
