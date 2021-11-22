@@ -9,11 +9,11 @@
 		<div class="container">
 			<div class="search-box">
 				<form action="Test.php" method="get">
-					<input class="search-field" type="text" name="search" placeholder="Summoner name">
+					<input class="search-field" type="text" name="search" placeholder="Summoner name...">
 					<div class="button">
 						<button class="button" type="submit" value="">
 							<img class="button" src="button2.png">
-						</button>	
+						</button>
 					</div>
 				</form>
 			</div>
