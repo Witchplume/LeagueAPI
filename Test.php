@@ -8,13 +8,13 @@
 	//  Initialize the library
 	$api = new LeagueAPI([
 		//  Your API key, you can get one at https://developer.riotgames.com/
-		LeagueAPI::SET_KEY    => 'APIKEY',
+		LeagueAPI::SET_KEY    => 'RGAPI-78b89706-a608-409d-b2b8-961deb29e5ae',
 		//  Target region (you can change it during lifetime of the library instance)
 		LeagueAPI::SET_REGION => Region::EUROPE_WEST,
 	]);
 
 	//  And now you are ready to rock!
-	$summoner = $api->getSummonerByName("Witchplume");
+	$summoner = $api->getSummonerByName($_GET['search']);
 	$matchlist = $api->getMatchIdsByPUUID($summoner->puuid);
 
 	//print_r($summoner) . '\n';
@@ -29,11 +29,13 @@
 		echo $match . '<br>';
 	}
 
+	/*
 	$summonerpuuid = $api->getSummonerByPUUID("YRrea91Rb8DKyHvocGIwl-Fg7DDmiSPHTn2sXA_nrfiQTFo27IT9gwrWPe_IY70wODcqc7NemIr9ug");
 
 	foreach ($summonerpuuid as $MatchSummoner1) {
 		echo '<br>' . $MatchSummoner1;
 	}
+	*/
 
 	/*
 	$matchcurrent = $api->GetMatch("EUW1_5566980115");
@@ -44,7 +46,7 @@
 	*/
 
 
-	//echo $api->getMatch('EUW1_5566980115');
+	//echo $api->getMatch('EUW1_5566980115'); doesnt work
 
-	//echo "<img src=\"img\\profileicon\\$summoner->profileIconId.png\">"; Works
+	echo "<img src=\"img\\profileicon\\$summoner->profileIconId.png\">";
 ?>
