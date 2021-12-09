@@ -8,7 +8,7 @@
 	//  Initialize the library
 	$api = new LeagueAPI([
 		//  Your API key, you can get one at https://developer.riotgames.com/
-		LeagueAPI::SET_KEY    => 'RGAPI-78b89706-a608-409d-b2b8-961deb29e5ae',
+		LeagueAPI::SET_KEY    => 'KEY',
 		//  Target region (you can change it during lifetime of the library instance)
 		LeagueAPI::SET_REGION => Region::EUROPE_WEST,
 	]);
@@ -28,6 +28,16 @@
 	foreach ($matchlist as $match) {
 		echo $match . '<br>';
 	}
+
+	$match2 = $api->getMatch((string)'EUW1_5599108990');
+
+	$participants = $match2->participants;
+
+	/*foreach ($participants as $players) {
+		echo $players;
+	}*/
+
+	print_r($participants);
 
 	/*
 	$summonerpuuid = $api->getSummonerByPUUID("YRrea91Rb8DKyHvocGIwl-Fg7DDmiSPHTn2sXA_nrfiQTFo27IT9gwrWPe_IY70wODcqc7NemIr9ug");
